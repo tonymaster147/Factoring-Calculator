@@ -1,0 +1,17 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Nunito Sans', system-ui, sans-serif;
+  color: #1f2738;
+  background: #f4f7fc;
+  -webkit-font-smoothing: antialiased;
+}
+
+input, button { font-family: inherit; }
+button { cursor: pointer; border: none; background: none; }
+
+@keyframes a4uPop {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
