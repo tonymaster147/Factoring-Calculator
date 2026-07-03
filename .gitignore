@@ -2,3 +2,7 @@ node_modules
 dist
 *.local
 .DS_Store
+
+# Local-only: contains SFTP credentials and editor settings — never commit
+.claude/
+*.code-workspace

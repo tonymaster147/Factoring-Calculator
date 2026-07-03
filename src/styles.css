@@ -4,7 +4,7 @@ body {
   margin: 0;
   font-family: 'Nunito Sans', system-ui, sans-serif;
   color: #1f2738;
-  background: #f4f7fc;
+  background: #ffffff;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -14,4 +14,9 @@ button { cursor: pointer; border: none; background: none; }
 @keyframes a4uPop {
   from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 680px) {
+  #a4u-head { flex-direction: column !important; align-items: center !important; justify-content: center !important; gap: 12px !important; }
+  #a4u-nav { width: 100% !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; gap: 10px !important; }
 }

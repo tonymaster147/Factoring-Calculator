@@ -26,5 +26,5 @@ export const EX_CHIP = {
 
 export const CARD = {
   background: '#fff', border: '1px solid #e4e9f2', borderRadius: 14,
-  boxShadow: '0 6px 22px rgba(20,34,74,.05)', overflow: 'hidden',
+  boxShadow: '0 6px 22px rgba(20,34,74,.07)', overflow: 'hidden',
 }
