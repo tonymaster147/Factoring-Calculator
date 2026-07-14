@@ -8,7 +8,7 @@ export default function Hero() {
   }
 
   return (
-    <section style={{ background: 'linear-gradient(110deg,#14395c 0%,#176e58 55%,#1f9d68 100%)', color: '#fff' }}>
+    <section style={{ background: 'linear-gradient(110deg,#1b46c9 0%,#1a72a3 50%,#16a06a 100%)', color: '#fff' }}>
       <div style={{ maxWidth: 1000, margin: '0 auto', padding: 'clamp(44px,7vw,72px) 20px clamp(48px,7vw,76px)', textAlign: 'center' }}>
         <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(255,255,255,.12)', border: '1px solid rgba(255,255,255,.25)', color: '#fff', fontFamily: POPPINS, fontWeight: 600, fontSize: 'clamp(12.5px,1.6vw,15px)', padding: '8px 18px', borderRadius: 30, marginBottom: 'clamp(18px,3vw,26px)' }}>
           🎉 Expert Help Available | Guaranteed Grade Support
