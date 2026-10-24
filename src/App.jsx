@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useCallback } from 'react'
 import { factor } from './lib/factoring.js'
 import { POPPINS } from './lib/styles.js'
 import Header from './components/Header.jsx'
@@ -15,13 +15,10 @@ const DEFAULT_INPUT = 'x^2 + 5x + 6'
 export default function App() {
   const [input, setInput] = useState(DEFAULT_INPUT)
   const [mode, setMode] = useState('auto')
-  const [result, setResult] = useState(null)
+  // Factor the default expression up front so the worked example is in the
+  // prerendered HTML, not only added after JavaScript runs.
+  const [result, setResult] = useState(() => factor(DEFAULT_INPUT, 'auto'))
   const [showSteps, setShowSteps] = useState(true)
-
-  // Factor the default expression once on first load.
-  useEffect(() => {
-    setResult(factor(DEFAULT_INPUT, 'auto'))
-  }, [])
 
   const calculate = useCallback(() => setResult(factor(input, mode)), [input, mode])
 
